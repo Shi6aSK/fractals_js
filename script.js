@@ -27,14 +27,14 @@ window.addEventListener('load', function() {
     const resetButton = document.getElementById('resetButton');
     const slider_spread = document.getElementById('spread');
     const label_spread = document.querySelector('[for= "spread"]');
-    slider_spread.addEventListener('mousemove', function(e) {
+    slider_spread.addEventListener('input', function(e) {
         spread = e.target.value;
     updateSliders();
     drawFractal();
     });
      const slider_sides = document.getElementById('sides');
      const label_sides = document.querySelector('[for= "sides"]');
-    slider_sides.addEventListener('mousemove', function(e) {
+    slider_sides.addEventListener('input', function(e) {
         slides = e.target.value;
         updateSliders();
         drawFractal();
